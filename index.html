@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Heure des Masques - Guide du Jeu</title>
+    <style>
+        body {
+            background-image: url('2.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c2c2c;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #ff6f61;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Conteneur avec un fond sombre et transparent */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #f0f0f0;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #444444;
+        }
+
+        .character-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .rules-container {
+            background-color: rgba(58, 58, 58, 0.9); /* Conteneur foncé comme celui du guide */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="histoire.html">L'Heure des Masques</a></h1>
+
+        <div class="image-container">
+            <img src="image.webp" alt="Image du jeu">
+        </div>
+
+        <h2>Guide du Jeu</h2>
+
+        <h2>1. Objectif du Jeu</h2>
+        <p>
+            Dans <em>L'Heure des Masques</em>, chaque joueur reçoit un rôle secret avec un pouvoir unique. Le but est de découvrir le coupable parmi les joueurs tout en utilisant vos pouvoirs pour influencer la partie.
+        </p>
+        <p>
+            <strong>Innocents</strong> : Gagnez en démasquant le coupable.<br>
+            <strong>Coupable</strong> : Gagnez en restant le dernier en vie ou en évitant d’être démasqué.
+        </p>
+
+        <h2>2. Nombre de Joueurs</h2>
+        <p><strong>5 à 9 joueurs</strong></p>
+
+        <h2>3. Durée Moyenne d'une Partie</h2>
+        <p><strong>30 à 60 minutes</strong></p>
+
+        <h2>4. Matériel</h2>
+        <p>
+            - <strong>Cartes de Rôles</strong> : 1 par joueur<br>
+            - <strong>Cartes d'Enlèvement</strong> : "Croix" (coupable), "Ronds" (innocents)
+        </p>
+
+        <h2>5. Liste des Rôles</h2>
+        <p>
+            Quelques exemples de rôles que vous pourriez rencontrer :
+        </p>
+
+        <!-- Tableau des rôles et pouvoirs dans un conteneur -->
+        <h2>6. Pouvoirs des Rôles</h2>
+        <div class="rules-container">
+            <table>
+                <tr>
+                    <th>Rôle</th>
+                    <th>Image</th>
+                    <th>Pouvoir</th>
+                    <th>Effet</th>
+                </tr>
+                <tr>
+                    <td><a href="roles/Parent_Inquiet.html">Parent Inquiet</a></td>
+                    <td><img src="roles/Parent_Inquiet.webp" alt="Parent Inquiet" class="character-img"></td>
+                    <td>Protection</td>
+                    <td>Peut protéger un joueur de l'élimination une fois par partie.</td>
+                </tr>
+                <tr>
+                    <td><a href="roles/ami_proche.html">Ami Proche</a></td>
+                    <td><img src="roles/ami_proche.webp" alt="Ami Proche" class="character-img"></td>
+                    <td>Sacrifice</td>
+                    <td>Choisit un joueur au début du 2ème tour. Si ce joueur est éliminé, l'Ami Proche se sacrifie à sa place.</td>
+                </tr>
+                <tr>
+                    <td><a href="roles/Nouveau_Voisin.html">Nouveau Voisin</a></td>
+                    <td><img src="roles/Nouveau_Voisin.webp" alt="Nouveau Voisin" class="character-img"></td>
+                    <td>Échange de Rôle</td>
+                    <td>Peut échanger son rôle avec un autre joueur une fois par partie.</td>
+                </tr>
+                <tr>
+                    <td><a href="roles/detective_amateur.html">Détective Amateur</a></td>
+                    <td><img src="roles/detective_amateur.webp" alt="Détective Amateur" class="character-img"></td>
+                    <td>Arrestation Précipitée</td>
+                    <td>Peut désigner un joueur à éliminer si un autre vote le soutient. Si la cible est éliminée, les autres votes sont annulés.</td>
+                </tr>
+                <tr>
+                    <td><a href="roles/policier.html">Policier</a></td>
+                    <td><img src="roles/policier.webp" alt="Policier" class="character-img"></td>
+                    <td>Double Vote</td>
+                    <td>Son vote compte double une fois par partie.</td>
+                </tr>
+                <tr>
+                    <td><a href="roles/maire_de_la_ville.html">Maire de la Ville</a></td>
+                    <td><img src="roles/Maire_de_la_Ville.webp" alt="Maire de la Ville" class="character-img"></td>
+                    <td>Immunité</td>
+                    <td>Peut s'accorder l'immunité pour un tour une fois par partie.</td>
+                </tr>
+                <tr>
+                    <td><a href="roles/croque_mort.html">Croque-Mort</a></td>
+                    <td><img src="roles/croque_mort.webp" alt="Croque-Mort" class="character-img"></td>
+                    <td>Résurrection</td>
+                    <td>Peut échanger sa carte avec celle d'un joueur éliminé une fois par partie.</td>
+                </tr>
+                <tr>
+                    <td><a href="roles/gardien_du_secret.html">Gardien du Secret</a></td>
+                    <td><img src="roles/gardien_du_secret.webp" alt="Gardien du Secret" class="character-img"></td>
+                    <td>Secret Révélé</td>
+                    <td>Peut révéler le rôle d'un autre joueur une fois par partie.</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>7. Règles Complètes</h2>
+        <p>
+            <strong style="color: rgb(207, 50, 50);">
+                Pour une explication détaillée du déroulement de la partie, des pouvoirs des rôles, et des phases de jeu, veuillez consulter les 
+                <a href="regledujeu.html">Règles du Jeu</a>.
+            </strong>
+        </p>
+        
+    </div>
+</body>
+</html>
