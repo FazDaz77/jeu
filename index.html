@@ -57,6 +57,8 @@
             width: 100%;
             margin-top: 20px;
             border-collapse: collapse;
+            overflow-x: auto;
+            display: block; /* Ensure table scrolls horizontally on small screens */
         }
 
         table, th, td {
@@ -85,6 +87,30 @@
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
+        }
+
+        /* Add responsiveness */
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            th, td {
+                padding: 5px;
+            }
+
+            .character-img {
+                width: 50px;
+                height: 50px;
+            }
+
+            table {
+                font-size: 0.8em; /* Reduce font size for better readability on small screens */
+            }
         }
     </style>
 </head>
